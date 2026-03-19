@@ -12,7 +12,7 @@ public class proj1controller {
         return new ArrayList<>(list.values());
     }
 
-    @PostMapping
+    @PostMapping("/insert")
     public boolean create(@RequestBody JournalEntry newentry){
         list.put(newentry.getId(), newentry);
         return true;
@@ -30,7 +30,6 @@ public class proj1controller {
 
     @DeleteMapping("/delete/{CurrId}")
     public boolean delete(@PathVariable Long CurrId){
-
         list.remove(CurrId);
         return true;
     }
