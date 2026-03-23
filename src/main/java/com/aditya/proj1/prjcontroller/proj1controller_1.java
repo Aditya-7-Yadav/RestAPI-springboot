@@ -4,7 +4,7 @@ import com.aditya.proj1.entity.JournalEntry;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/Journ")
+@RequestMapping("/Jour")
 public class proj1controller_1 {
     private Map<Long,JournalEntry> list= new HashMap<>();
     @GetMapping("/viewAll")
