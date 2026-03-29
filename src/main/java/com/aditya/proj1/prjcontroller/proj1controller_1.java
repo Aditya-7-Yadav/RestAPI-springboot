@@ -13,7 +13,7 @@ public class proj1controller_1 {
     }
 
     @PostMapping("/insert")
-    public boolean creaete(@RequestBody JournalEntry newentry){
+    public boolean create(@RequestBody JournalEntry newentry){
         list.put(newentry.getId(), newentry);
         return true;
     }
